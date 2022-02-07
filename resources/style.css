@@ -16,11 +16,15 @@ div {
 }
 
 .text-center {
-     text-align: center!important;
+    text-align: center !important;
 }
 
 .justify-content-center {
-    justify-content: center!important;
+    justify-content: center !important;
+}
+
+.mvrt-sub-headers {
+    margin: 50px 0 20px 0;
 }
 
 .mlr-10px {
@@ -28,25 +32,25 @@ div {
 }
 
 .mb-30px, .my-30px {
-    margin-bottom: 1.875rem!important;
+    margin-bottom: 1.875rem !important;
 }
 
 .font-weight-bold {
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
 
 .text-uppercase {
-    text-transform: uppercase!important;
+    text-transform: uppercase !important;
 }
 
 .d-flex {
-    display: flex!important;
+    display: flex !important;
 }
 
 .text-right {
-    text-align: right!important;
+    text-align: right !important;
 }
 
 .flex-grow-1 {
-    flex-grow: 1!important;
+    flex-grow: 1 !important;
 }
