@@ -1,11 +1,11 @@
 import React from 'react';
 import "./App.css";
+import {Header} from "./components/Header";
 
 function App() {
     return (
         <div>
-            It's allliiIIIIIIVEEeeee !!!
-            Воно ЖИВЕ! ж ДЕЙЖЗК к
+            <Header/>
         </div>
     );
 }
