@@ -3,10 +3,12 @@ import {useState, useEffect} from "react";
 import {Container} from "./Container";
 
 import {BsSunFill, BsSun} from 'react-icons/bs';
+import {LanguageSwitcher} from "./LanguageSwitcher";
 
 const HeaderElement = styled.header`
     box-shadow: var(--shadow);
-    background-color: var(--colors-ui-base);
+    background-color: var(--color-ui-base);
+    font-size: var(--fs-lg);
 `;
 
 const Wrapper = styled.header`
@@ -17,27 +19,29 @@ const Wrapper = styled.header`
 `;
 
 const Title = styled.div`
-    color: var(--colors-text);
-    font-size: var(--fs-lg);
-    text-decoration: none;
-    font-weight: var(--fw-bold);
+    //color: var(--colors-text);
+    //font-size: var(--fs-lg);
+    //text-decoration: none;
+    //font-weight: var(--fw-bold);
 `;
 
-const ModeSwitcher = styled.div`
-    color: var(--colors-text);
-    font-size: var(--fw-normal);
-    cursor: pointer;
-    text-transform: capitalize;
+const Menu = styled.div`
     display: flex;
     align-items: center;
-    
+`;
+
+const ThemeSwitcher = styled.div`
+    cursor: pointer;
+    display: flex;
+    margin-right: 1rem;
+
     :hover {
-        color: var(--colors-hover-text);
+        color: var(--color-a-text);
     }
 `;
 
 export const Header = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
 
     const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
 
@@ -49,15 +53,17 @@ export const Header = () => {
         <HeaderElement>
             <Container>
                 <Wrapper>
-                    <Title>Resume Page</Title>
-                    <ModeSwitcher onClick={toggleTheme}>
-                        <span style={{marginRight: '0.75rem'}}>{theme} Theme</span>
-                        {theme === 'light' ? (
-                            <BsSunFill size="28px"/>
-                        ) : (
-                            <BsSun size="28px"/>
-                        )}
-                    </ModeSwitcher>
+                    <Title id="header-text">Resume Page</Title>
+                    <Menu>
+                        <ThemeSwitcher onClick={toggleTheme}>
+                            {theme === 'light' ? (
+                                <BsSunFill size="28px"/>
+                            ) : (
+                                <BsSun size="28px"/>
+                            )}
+                        </ThemeSwitcher>
+                        <LanguageSwitcher/>
+                    </Menu>
                 </Wrapper>
             </Container>
         </HeaderElement>
