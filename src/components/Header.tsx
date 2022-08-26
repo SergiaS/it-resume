@@ -29,11 +29,11 @@ const ThemeSwitcher = styled.div`
     margin-right: 1rem;
     align-items: center;
     justify-items: center;
-    transition: 0.4s;
+    transition: var(--animation-speed);
 
     :hover {
         color: var(--color-a-text);
-        transition: 0.4s;
+        transition: var(--animation-speed);
     }
 `;
 

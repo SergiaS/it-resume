@@ -11,12 +11,12 @@ const Wrapper = styled.div.attrs(() => ({
     width: 2rem;
     height: 1.5rem;
     color: var(--color-default-text);
-    transition: 0.4s;
+    transition: var(--animation-speed);
 
     :hover label {
         position: relative;
         pointer-events: all;
-        transition: 0.4s;
+        transition: var(--animation-speed);
     }
 
     label {

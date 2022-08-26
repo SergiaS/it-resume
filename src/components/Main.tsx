@@ -106,7 +106,7 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className="bold" id="text-web">Web</div>
-                        <div className="italic">React, TypeScript, JavaScript, HTML/CSS</div>
+                        <div className="italic">React (styled-components, react-icons), TypeScript, JavaScript, HTML/CSS</div>
                     </div>
                     <div>
                         <div className="bold" id="text-tools">Tools</div>
@@ -114,7 +114,7 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className="bold" id="text-familiar">Familiar with</div>
-                        <div className="italic">jQuery, Node.js, Python, Dart/Flutter, Docker, AWS (EC2, S3), Postman
+                        <div className="italic">jQuery, Node.js, Python, Dart/Flutter, Docker, AWS (EC2, S3), Heroku, Postman
                         </div>
                     </div>
                 </div>

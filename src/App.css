@@ -26,6 +26,7 @@
 
     /* Other */
     --gap-inner: 1rem;
+    --animation-speed: 0.4s;
 }
 
 /* Темізація через data-атрибути */
@@ -41,7 +42,7 @@ body[data-theme='dark'] {
 }
 body[data-theme='light'] {
     --color-default-text: hsl(0, 0%, 15%);
-    --color-a-text: black;
+    --color-a-text: hsl(206, 100%, 34%);
     --color-important-text: black;
     --color-bg: hsl(0, 0%, 98%);
     --color-bg-block: hsl(0, 0%, 95%);
