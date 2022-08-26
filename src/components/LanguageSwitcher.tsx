@@ -89,6 +89,27 @@ export function LanguageSwitcher() {
         document.getElementsByTagName('h1')[0].innerHTML = lang.name;
         document.getElementsByTagName('h2')[0].innerHTML = lang.vacancy;
         document.getElementById('location')!.innerHTML = lang.location;
+
+        document.getElementById('text-skills')!.innerHTML = lang.textSkills;
+        document.getElementById('text-tests')!.innerHTML = lang.skills.tests;
+        document.getElementById('text-web')!.innerHTML = lang.skills.web;
+        document.getElementById('text-tools')!.innerHTML = lang.skills.tools;
+        document.getElementById('text-familiar')!.innerHTML = lang.skills.familiar;
+
+        document.getElementById('text-languages')!.innerHTML = lang.textLanguages;
+        document.getElementById('english-name')!.innerHTML = lang.languages.english.name;
+        document.getElementById('english-level')!.innerHTML = lang.languages.english.level;
+        document.getElementById('ukrainian-name')!.innerHTML = lang.languages.ukrainian.name;
+        document.getElementById('ukrainian-level')!.innerHTML = lang.languages.ukrainian.level;
+        document.getElementById('russian-name')!.innerHTML = lang.languages.russian.name;
+        document.getElementById('russian-level')!.innerHTML = lang.languages.russian.level;
+
+        document.getElementById('text-experience')!.innerHTML = lang.textExperience;
+        document.getElementById('exp-topjava')!.innerHTML = lang.experience.topjava;
+        document.getElementById('exp-binary')!.innerHTML = lang.experience.binary;
+
+        document.getElementById('text-courses')!.innerHTML = lang.textCourse;
+        document.getElementById('course-block')!.innerHTML = lang.course;
     }
 
     return (
