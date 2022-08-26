@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/it-resume/static/css/main.cd3a1724.css",
+    "main.js": "/it-resume/static/js/main.f86777a3.js",
+    "static/media/KyivTypeSans-Medium2.ttf": "/it-resume/static/media/KyivTypeSans-Medium2.1943b26c88cfaad48893.ttf",
+    "static/media/KyivTypeSans-Regular.ttf": "/it-resume/static/media/KyivTypeSans-Regular.f1baf3aaa199be8178bf.ttf",
+    "index.html": "/it-resume/index.html",
+    "main.cd3a1724.css.map": "/it-resume/static/css/main.cd3a1724.css.map",
+    "main.f86777a3.js.map": "/it-resume/static/js/main.f86777a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd3a1724.css",
+    "static/js/main.f86777a3.js"
+  ]
+}
