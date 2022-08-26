@@ -1,0 +1,84 @@
+@import-normalize;
+
+@font-face {
+    font-family: 'KyivTypeRegular';
+    src: local('KyivTypeSans-Regular'), url(../src/fonts/KyivTypeSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'KyivTypeMedium';
+    src: local('KyivTypeSans-Medium2'), url(../src/fonts/KyivTypeSans-Medium2.ttf) format('truetype');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Typography */
+    --family: 'KyivTypeMedium', sans;
+    --fs-sm: 12px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fw-normal: 300;
+    --fw-bold: 600;
+
+    /* Other */
+    --gap-inner: 1rem;
+    --animation-speed: 0.4s;
+}
+
+/* Темізація через data-атрибути */
+body[data-theme='dark'] {
+    --color-default-text: hsl(0, 0%, 86%);
+    --color-a-text: lightgoldenrodyellow;
+    --color-important-text: hsl(48, 100%, 50%);
+    --color-bg: hsl(207, 26%, 17%);
+    --color-bg-block: hsl(209, 23%, 22%);
+    --color-hover-bg: hsl(206, 100%, 34%);
+    --color-ui-base: hsl(209, 23%, 22%);
+    --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
+}
+body[data-theme='light'] {
+    --color-default-text: hsl(0, 0%, 15%);
+    --color-a-text: hsl(206, 100%, 34%);
+    --color-important-text: black;
+    --color-bg: hsl(0, 0%, 98%);
+    --color-bg-block: hsl(0, 0%, 95%);
+    --color-hover-bg: hsl(206, 100%, 34%);
+    --color-ui-base: hsl(0, 0%, 95%);
+    --shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--family);
+    color: var(--color-default-text);
+    font-weight: var(--fw-normal);
+    background-color: var(--color-bg);
+}
+a {
+    transition: 0.4s;
+    color: var(--color-a-text);
+    text-decoration: none;
+}
+a:hover {
+    transition: 0.4s;
+    color: deepskyblue;
+    cursor: pointer;
+}
+h1, h2 {
+    color: var(--color-important-text);
+}
+hr {
+    border: 1px solid var(--color-important-text);
+    margin: 0 0;
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+.italic {
+    font-style: italic;
+}
