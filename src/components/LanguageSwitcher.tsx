@@ -110,6 +110,8 @@ export function LanguageSwitcher() {
 
         document.getElementById('text-courses')!.innerHTML = lang.textCourse;
         document.getElementById('course-block')!.innerHTML = lang.course;
+
+        document.getElementById('footer-text')!.innerHTML = lang.footer;
     }
 
     return (

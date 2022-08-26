@@ -2,7 +2,7 @@ export const i18n = [
     {
         code: 'EN',
         header: 'Resume',
-        footer: 'Technologies used: JavaScript, HTML/CSS',
+        footer: 'This page uses the following technologies:',
         name: 'Serhiy KRUKOWSKI',
         vacancy: 'Java Developer',
         location: 'Kyiv, Ukraine',
@@ -73,7 +73,7 @@ export const i18n = [
     {
         code: 'UA',
         header: 'Резюме',
-        footer: 'Використанні технології: JavaScript, HTML/CSS',
+        footer: 'Ця сторінка використовує наступні технології:',
         name: 'Сергій КРУКОВСЬКИЙ',
         vacancy: 'Java Розробник',
         location: 'Київ, Україна',
@@ -141,7 +141,7 @@ export const i18n = [
     {
         code: 'RU',
         header: 'Резюме',
-        footer: 'Использованные технологии: JavaScript, HTML/CSS',
+        footer: 'Эта страница использует следующие технологии:',
         name: 'Сергей КРУКОВСКИЙ',
         vacancy: 'Java Разработчик',
         location: 'Киев, Украина',
@@ -207,10 +207,3 @@ export const i18n = [
         `,
     },
 ]
-
-// console.log(
-//     i18n.unshift(
-//         i18n.splice(
-//             i18n.findIndex(langObj => langObj.code === 'EN'), 1)[0])
-// )
-// console.log(i18n)
