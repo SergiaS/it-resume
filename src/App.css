@@ -34,37 +34,20 @@ body[data-theme='dark'] {
     --color-a-text: lightgoldenrodyellow;
     --color-important-text: hsl(48, 100%, 50%);
     --color-bg: hsl(207, 26%, 17%);
-    --color-bg-block: hsla(207, 26%, 17%, 0.85);
+    --color-bg-block: hsl(209, 23%, 22%);
     --color-hover-bg: hsl(206, 100%, 34%);
     --color-ui-base: hsl(209, 23%, 22%);
     --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
-
-    --bg-color: #202c37;
-    --bg-image:
-            linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000),
-            linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000),
-            linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000),
-            linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000),
-            linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077),
-            linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
 }
 body[data-theme='light'] {
     --color-default-text: hsl(0, 0%, 15%);
     --color-a-text: black;
     --color-important-text: black;
     --color-bg: hsl(0, 0%, 98%);
-    --color-bg-block: hsla(0, 0%, 98%, 0.85);
-    --color-hover-bg: hsl(0, 0%, 75%);
-    --color-ui-base: hsl(0, 0%, 100%);
+    --color-bg-block: hsl(0, 0%, 95%);
+    --color-hover-bg: hsl(206, 100%, 34%);
+    --color-ui-base: hsl(0, 0%, 95%);
     --shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-
-    --bg-image:
-            linear-gradient(30deg, #e3e3e3 12%, transparent 12.5%, transparent 87%, #e3e3e3 87.5%, #e3e3e3),
-            linear-gradient(150deg, #e3e3e3 12%, transparent 12.5%, transparent 87%, #e3e3e3 87.5%, #e3e3e3),
-            linear-gradient(30deg, #e3e3e3 12%, transparent 12.5%, transparent 87%, #e3e3e3 87.5%, #e3e3e3),
-            linear-gradient(150deg, #e3e3e3 12%, transparent 12.5%, transparent 87%, #e3e3e3 87.5%, #e3e3e3),
-            linear-gradient(60deg, #e3e3e377 25%, transparent 25.5%, transparent 75%, #e3e3e377 75%, #e3e3e377),
-            linear-gradient(60deg, #e3e3e377 25%, transparent 25.5%, transparent 75%, #e3e3e377 75%, #e3e3e377);
 }
 
 body {
@@ -72,5 +55,29 @@ body {
     font-family: var(--family);
     color: var(--color-default-text);
     font-weight: var(--fw-normal);
-    background-color: var(--bg-color);
+    background-color: var(--color-bg);
+}
+a {
+    transition: 0.4s;
+    color: var(--color-a-text);
+    text-decoration: none;
+}
+a:hover {
+    transition: 0.4s;
+    color: deepskyblue;
+    cursor: pointer;
+}
+h1, h2 {
+    color: var(--color-important-text);
+}
+hr {
+    border: 1px solid var(--color-important-text);
+    margin: 0 0;
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+.italic {
+    font-style: italic;
 }

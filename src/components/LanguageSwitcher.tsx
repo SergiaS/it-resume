@@ -11,14 +11,14 @@ const Wrapper = styled.div.attrs(() => ({
     width: 2rem;
     height: 1.5rem;
     color: var(--color-default-text);
+    transition: 0.4s;
 
-    //:hover .option {
     :hover label {
         position: relative;
         pointer-events: all;
+        transition: 0.4s;
     }
 
-    //.option {
     label {
         color: var(--color-bg);
         min-height: 1.5rem;
@@ -30,10 +30,8 @@ const Wrapper = styled.div.attrs(() => ({
         order: 2;
         z-index: 1;
     }
-
-    //.option:hover {
     label:hover {
-        color: var(--color-default-text);
+        color: lightgoldenrodyellow;
         background: var(--color-hover-bg);
     }
 
@@ -42,7 +40,6 @@ const Wrapper = styled.div.attrs(() => ({
         position: absolute;
         left: -99999px;
     }
-
     input:checked + label {
         color: var(--color-default-text);
         order: 1;
@@ -87,9 +84,11 @@ export function LanguageSwitcher() {
         updateLanguage(i18n.filter(lang => lang.code === selectedLanguage)[0]);
     }, []);
 
-
     function updateLanguage(lang: any): void {
         document.getElementById('header-text')!.innerHTML = lang.header;
+        document.getElementsByTagName('h1')[0].innerHTML = lang.name;
+        document.getElementsByTagName('h2')[0].innerHTML = lang.vacancy;
+        document.getElementById('location')!.innerHTML = lang.location;
     }
 
     return (

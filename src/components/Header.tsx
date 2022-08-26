@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {useState, useEffect} from "react";
 import {Container} from "./Container";
 
-import {BsSunFill, BsSun} from 'react-icons/bs';
+import {BsFillSunFill, BsFillMoonStarsFill} from 'react-icons/bs';
 import {LanguageSwitcher} from "./LanguageSwitcher";
 
 const HeaderElement = styled.header`
@@ -18,13 +18,6 @@ const Wrapper = styled.header`
     padding: 0.5rem 0;
 `;
 
-const Title = styled.div`
-    //color: var(--colors-text);
-    //font-size: var(--fs-lg);
-    //text-decoration: none;
-    //font-weight: var(--fw-bold);
-`;
-
 const Menu = styled.div`
     display: flex;
     align-items: center;
@@ -34,9 +27,13 @@ const ThemeSwitcher = styled.div`
     cursor: pointer;
     display: flex;
     margin-right: 1rem;
+    align-items: center;
+    justify-items: center;
+    transition: 0.4s;
 
     :hover {
         color: var(--color-a-text);
+        transition: 0.4s;
     }
 `;
 
@@ -53,13 +50,13 @@ export const Header = () => {
         <HeaderElement>
             <Container>
                 <Wrapper>
-                    <Title id="header-text">Resume Page</Title>
+                    <div id="header-text">Resume Page</div>
                     <Menu>
                         <ThemeSwitcher onClick={toggleTheme}>
                             {theme === 'light' ? (
-                                <BsSunFill size="28px"/>
+                                <BsFillSunFill size="22px"/>
                             ) : (
-                                <BsSun size="28px"/>
+                                <BsFillMoonStarsFill size="20px"/>
                             )}
                         </ThemeSwitcher>
                         <LanguageSwitcher/>
