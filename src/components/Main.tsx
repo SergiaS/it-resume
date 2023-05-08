@@ -44,6 +44,9 @@ const MainBlock = styled.div`
         font-size: 32px;
         padding-right: 0.5rem;
     }
+    .term {
+        color: var(--color-term);
+    }
     
     @media (max-width: 800px) {
         #experience-block, #course-block {
@@ -84,7 +87,7 @@ export const Main = () => {
                 <div id="skills-block">
                     <div>
                         <div className="bold">Java Core</div>
-                        <div className="italic">Collections, Stream API, I/O, etc.</div>
+                        <div className="italic">Collections, Stream API, I/O, Multithreading, etc.</div>
                     </div>
                     <div>
                         <div className="bold">Spring</div>
@@ -92,13 +95,11 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className="bold">API/Frameworks</div>
-                        <div className="italic">Servlets/JSP + JSTL, Thymeleaf, JDBC, JPA, Hibernate, REST -
-                            Jackson/Gson
-                        </div>
+                        <div className="italic">Servlets/JSP + JSTL, Thymeleaf, JDBC, JPA, Hibernate, REST - Jackson/Gson</div>
                     </div>
                     <div>
                         <div className="bold" id="text-tests">Tests</div>
-                        <div className="italic">JUnit 4/5, Hamcrest, Mockito, AssertJ, JsonPath</div>
+                        <div className="italic">JUnit 4/5, AssertJ, Mockito, Hamcrest</div>
                     </div>
                     <div>
                         <div className="bold">DBMS</div>
@@ -106,7 +107,7 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className="bold" id="text-web">Web</div>
-                        <div className="italic">React (styled-components, react-icons), TypeScript, JavaScript, HTML/CSS</div>
+                        <div className="italic">React, JavaScript, TypeScript, HTML/CSS</div>
                     </div>
                     <div>
                         <div className="bold" id="text-tools">Tools</div>
@@ -114,8 +115,7 @@ export const Main = () => {
                     </div>
                     <div>
                         <div className="bold" id="text-familiar">Familiar with</div>
-                        <div className="italic">jQuery, Node.js, Python, Dart/Flutter, Docker, AWS (EC2, S3), Heroku, Postman
-                        </div>
+                        <div className="italic">jQuery, Node.js, Python, Dart/Flutter, Docker, AWS (EC2, S3), Heroku, Postman, CLI</div>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@ export const Main = () => {
                         <div className="italic" id="ukrainian-level">Рідна</div>
                     </div>
                     <div>
-                        <div className="bold" id="russian-name">Руснявый</div>
+                        <div className="bold" id="russian-name">Русский</div>
                         <div className="italic" id="russian-level">Мастер</div>
                     </div>
                 </div>
@@ -148,10 +148,14 @@ export const Main = () => {
                 <hr/>
 
                 <div id="experience-block">
-                    <div className="date">10/2021 – 01/2022</div>
+                    <div className="date">10/2021 – 01/2022
+                        <br/>
+                        <span className="term" id="exp-topjava-term">4 months</span>
+                    </div>
                     <div>
                         <div className="exp-position">
-                            <span className="bold">Java Developer</span>,
+                            <span className="bold">Java Developer</span>
+                            <span>, </span>
                             <span className="italic">Java Online Projects (JavaOPs)</span>
                         </div>
                         <div className="exp-desc" id="exp-topjava">
@@ -160,17 +164,19 @@ export const Main = () => {
                                 REST (Jackson) / Java 8 Stream API stack:</p>
                             <ul>
                                 <li>implementation of saving to Postgres and HSQLDB databases based on Spring JBDC, JPA
-                                    (Hibernate) and Spring-Data-JPA;
-                                </li>
+                                    (Hibernate) and Spring-Data-JPA;</li>
                                 <li>implementation and testing of REST and AJAX controllers;</li>
                                 <li>client implementation on Bootstrap (css/js), datatables, jQuery + plugins.</li>
                             </ul>
                         </div>
                     </div>
-                    <div className="date">04/2020 – 06/2020</div>
+                    <div className="date">04/2020 – 06/2020
+                        <br/>
+                        <span className="term" id="exp-binary-term">3 months</span></div>
                     <div>
                         <div className="exp-position">
-                            <span className="bold">Java Developer</span>,
+                            <span className="bold">Java Developer</span>
+                            <span>, </span>
                             <span className="italic">Binary Studio</span>
                         </div>
                         <div className="exp-desc" id="exp-binary">
@@ -200,7 +206,7 @@ export const Main = () => {
                     <div>
                         <div className="bold">JavaRush</div>
                         <div className="italic">
-                            <p>Java Core course by <a href="https://javarush.ru/ua/">javarush.ru</a>.</p>
+                            <p>Java Core course by <a href="https://javarush.com/ua/">javarush.com</a>.</p>
                         </div>
                     </div>
                     <div className="date">06/2018 – 11/2018</div>

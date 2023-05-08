@@ -26,7 +26,7 @@
 
     /* Other */
     --gap-inner: 1rem;
-    --animation-speed: 0.4s;
+    --animation-speed: 0.2s;
 }
 
 /* Темізація через data-атрибути */
@@ -38,6 +38,7 @@ body[data-theme='dark'] {
     --color-bg-block: hsl(209, 23%, 22%);
     --color-hover-bg: hsl(206, 100%, 34%);
     --color-ui-base: hsl(209, 23%, 22%);
+    --color-term: hsl(210, 17%, 55%);
     --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
 }
 body[data-theme='light'] {
@@ -48,6 +49,7 @@ body[data-theme='light'] {
     --color-bg-block: hsl(0, 0%, 95%);
     --color-hover-bg: hsl(206, 100%, 34%);
     --color-ui-base: hsl(0, 0%, 95%);
+    --color-term: hsl(206, 100%, 34%);
     --shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
@@ -59,12 +61,11 @@ body {
     background-color: var(--color-bg);
 }
 a {
-    transition: 0.4s;
     color: var(--color-a-text);
     text-decoration: none;
 }
 a:hover {
-    transition: 0.4s;
+    transition: var(--animation-speed);
     color: deepskyblue;
     cursor: pointer;
 }

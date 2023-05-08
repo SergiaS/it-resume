@@ -11,12 +11,10 @@ const Wrapper = styled.div.attrs(() => ({
     width: 2rem;
     height: 1.5rem;
     color: var(--color-default-text);
-    transition: var(--animation-speed);
 
     :hover label {
         position: relative;
         pointer-events: all;
-        transition: var(--animation-speed);
     }
 
     label {
@@ -105,8 +103,10 @@ export function LanguageSwitcher() {
         document.getElementById('russian-level')!.innerHTML = lang.languages.russian.level;
 
         document.getElementById('text-experience')!.innerHTML = lang.textExperience;
-        document.getElementById('exp-topjava')!.innerHTML = lang.experience.topjava;
-        document.getElementById('exp-binary')!.innerHTML = lang.experience.binary;
+        document.getElementById('exp-topjava')!.innerHTML = lang.experience.topjava.code;
+        document.getElementById('exp-topjava-term')!.innerHTML = lang.experience.topjava.term;
+        document.getElementById('exp-binary')!.innerHTML = lang.experience.binary.code;
+        document.getElementById('exp-binary-term')!.innerHTML = lang.experience.binary.term;
 
         document.getElementById('text-courses')!.innerHTML = lang.textCourse;
         document.getElementById('course-block')!.innerHTML = lang.course;
